@@ -36,5 +36,14 @@ describe("App", () => {
                     done();
                  });
         });
+        it("it should fail with the value of waleed", (done) => {
+            chai.request(app)
+                .get('/')
+                .end((err, res) => {
+                    res.should.have.status(200);
+                    expect(res.body.hello).to.not.equal('waleed');
+                    done();
+                 });
+        });
     });
 });
