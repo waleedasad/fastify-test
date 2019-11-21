@@ -1,0 +1,30 @@
+{
+  "name": "fastify-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "mocha test"
+  },
+  "dependencies": {
+    "fastify": "^2.10.0"
+  },
+  "devDependencies": {
+    "mocha": "^6.2.2",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faizan-hasan/fastify-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/faizan-hasan/fastify-test/issues"
+  },
+  "homepage": "https://github.com/faizan-hasan/fastify-test#readme"
+}
