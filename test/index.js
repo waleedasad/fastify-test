@@ -18,12 +18,12 @@ describe("App", () => {
                      done();
                   });
          });
-         it("expect value to be world", (done) => {
+         it("expect value to be string", (done) => {
             chai.request(app)
                 .get('/')
                 .end((err, res) => {
                     res.should.have.status(200);
-                    expect(res.body.hello).to.equal('world');
+                    res.body.hello.should.be.a('string');
                     done();
                  });
         });
