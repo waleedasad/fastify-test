@@ -9,7 +9,6 @@ fastify.get('/', async (request, reply) => {
 		hello: 'world'
 	}
 });
-
 // Run the server!
 const start = async () => {
 	try {
